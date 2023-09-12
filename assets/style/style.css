@@ -110,11 +110,15 @@ h6 {
     color: #e5e5e5;
 }
 
+.header__top {
+    border-bottom: 2px solid #D9DADB;
+}
+
 
 .header__top__left {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 15px;
 }
 
 .header__bottom__day,
@@ -143,8 +147,21 @@ h6 {
     gap: 25px;
 }
 
-.header__top__left__section {
+
+.sign-in-txt a {
+    color: var(--base-grey-85, #4B5157);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.header__top__left__sections {
+    display: flex;
+    height: 50px;
     gap: 15px;
+    padding-right: 25px;
+    border-right: 2px solid #D9DADB;
+    align-items: center;
 }
 
 
@@ -183,6 +200,15 @@ h6 {
     line-height: 15px;
 }
 
+.header__top__right-subscribe-txt a {
+    color: var(--base-grey-100, #262D33);
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    font-weight: bold;
+}
+
 .sign-in-txt {
     font-size: 14px;
     line-height: 20px;
@@ -201,6 +227,12 @@ h6 {
     gap: 15px;
 }
 
+.header__bottom__location__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 .navigation {
     background-color: #262D33;
@@ -216,6 +248,9 @@ h6 {
     color: #FFF;
     margin-bottom: 30px;
 }
+
+
+/*------------------------------promo-----------------------------*/
 
 .promo {
     background-color: #262D33;
@@ -245,7 +280,7 @@ h6 {
     line-height: 25px;
 }
 
-.promo__news_title{
+.promo__news_title {
     transition: all .3s;
 }
 
@@ -306,7 +341,7 @@ h6 {
     color: var(--blue-blue-75, #4592FF);
     font-family: Lato;
     font-size: 12px;
-    font-weight: 400;
+    font-weight: bold;
     line-height: 15px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
@@ -339,13 +374,35 @@ h6 {
 }
 
 .promo__recomm__right-side-card-item-title {
-    color: var(--bluegreen-bluegreen-75, #3BBDC4);
     font-size: 12px;
     font-weight: 400;
     line-height: 15px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
     margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.promo__recomm-food {
+    color: var(--bluegreen-bluegreen-75, #3BBDC4);
+}
+
+.promo__recomm-cars {
+    color: #6E99AE
+}
+.promo__recomm-movies {
+    color: var(--purple-purple-75, #AC8EE3);
+
+}
+
+.promo__recomm-nfl {
+    color: var(--orange-orange-75, #FFA34D);
+
+}
+
+.promo__recomm-tech {
+    color: var(--green-green-75, #3DC47E);
+
 }
 
 .promo__recomm__right-side-card-item-txt {
@@ -359,6 +416,9 @@ h6 {
 .rigth-arrow {
     position: relative;
 }
+
+
+/*------------------------------popular-----------------------------*/
 
 .popular {
     margin-bottom: 60px;
@@ -413,12 +473,13 @@ h6 {
     margin-bottom: 25px;
     transition: all .3s;
 }
+
 .popular-main-cars-title:hover {
     transform: scale(1.1);
     transition: all .3s;
 }
 
-.popular-main-cars-title a{
+.popular-main-cars-title a {
     color: var(--base-grey-100, #262D33);
     font-family: Roboto Slab;
     font-size: 25px;
@@ -502,7 +563,7 @@ h6 {
     margin-bottom: 10px;
 }
 
-.popular-main-popular-title a{
+.popular-main-popular-title a {
     color: var(--base-white, #FFF);
     font-family: Roboto Slab;
     font-size: 16px;
@@ -600,7 +661,7 @@ h6 {
     transition: all .3s;
 }
 
-.popular-main-cards-item-title a{
+.popular-main-cards-item-title a {
     color: var(--base-white, #FFF);
     font-size: 20px;
     font-weight: 700;
@@ -699,6 +760,7 @@ h6 {
     margin-bottom: 5px;
     transition: all .3s;
 }
+
 .popular-main-card-title:hover {
     transform: scale(1.1);
     transition: all .3s;
@@ -727,6 +789,9 @@ h6 {
     line-height: 15px;
 }
 
+
+/*------------------------------main-news-----------------------------*/
+
 .main-news {
     background: url(../img/main-news/bg.png);
     background-repeat: no-repeat;
@@ -740,7 +805,7 @@ h6 {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 50px 0px 55px 0px;
+    padding: 80px 0px 80px 0px;
 }
 
 
@@ -752,6 +817,8 @@ h6 {
     text-align: center;
     margin-bottom: 25px;
 }
+
+/*------------------------------notes-main-----------------------------*/
 
 .notes-content {
     display: flex;
@@ -807,11 +874,14 @@ h6 {
     width: 437px;
 }
 
-.notes-main-item-title a{
+.notes-main-item-title a {
     color: var(--base-grey-100, #262D33);
     font-size: 20px;
     font-weight: 700;
     line-height: 25px;
+}
+.notes-main-item-title {
+    
     margin-bottom: 10px;
 }
 
@@ -832,6 +902,7 @@ h6 {
 .notes-recomm-content {
     padding: 20px 25px 15px 25px;
 }
+
 
 
 .notes-recomm-title {
@@ -856,12 +927,15 @@ h6 {
     border-bottom: 1px solid #D9DADB;
 }
 
-.notes-recomm-card-item-txt-title a{
+.notes-recomm-card-item-txt-title a {
     color: var(--base-grey-85, #4B5157);
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
     width: 143px;
+}
+
+.notes-recomm-card-item-txt-title {
     margin-bottom: 5px;
 }
 
@@ -887,6 +961,7 @@ h6 {
     line-height: 20px;
 }
 
+/*------------------------------hot-----------------------------*/
 
 .hot {
     background: #262D33;
@@ -1135,7 +1210,7 @@ h6 {
     padding: 25px 25px 30px 25px;
 }
 
-.hot-content-item-small-title a{
+.hot-content-item-small-title a {
     color: var(--base-grey-100, #262D33);
     font-family: Roboto Slab;
     font-size: 16px;
@@ -1159,6 +1234,10 @@ h6 {
     font-weight: 400;
     line-height: 15px;
 }
+
+
+/*------------------------------footer-----------------------------*/
+
 
 .footer {
     background: #FFF;
@@ -1210,6 +1289,7 @@ h6 {
     flex-direction: column;
     gap: 15px;
 }
+
 .footer_link_item_news_links a:hover {
     transform: scale(1.1);
     transition: all .3s;
@@ -1293,6 +1373,7 @@ h6 {
     transform: scale(1.1);
     transition: all .3s;
 }
+
 .footer_contacts-link {
     transition: all .3s;
 }
